@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIO#2</title>
+</head>
+<body>
+    <h1><center>LABORATORIO#2</center></h1>
+    <p id="texto"></p>
+    <p id="respuesta"></p>
+    <p id="texto_2"></p>
+    <p id="respuesta_2"></p>
+    <p id="problema2"></p>
+    
+
+    <script>
+        /* PROBLEMA #1 */
+        document.getElementById('texto').innerHTML = "¿Qué es Javascript y en qué se asemeja a Java?"
+        document.getElementById('respuesta').innerHTML = "JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web. \n\
+        Cuando JavaScript se ejecuta en el navegador, no necesita de un compilador.\n\
+         El navegador lee directamente el código, sin necesidad de terceros. Por tanto,\n\
+          se le reconoce como uno de los tres lenguajes nativos de la web junto a HTML (contenido y su estructura)\n\
+           y a CSS (diseño del contenido y su estructura Java es un lenguaje mayormente de servidor que permite ejecutar código en un navegador\n\
+            a través de máquinas virtuales. Javascript nos sirve para crear código sólo de cliente, sólo de servidor, o de cliente\n\
+             y servidor pudiendo abarcar con un único lenguaje lo que se llama el Full Stack Development.)"
+        document.getElementById('texto_2').innerHTML = "En qué se asemeja a Java?"
+        document.getElementById('respuesta_2').innerHTML = "Mientras Java esta diseñado para propósitos generales de desarrollo,\n\
+         como software y páginas web; JavaScript está diseñado para un propósito específico, como es el desarrollo web principalmente,\n\
+          aunque también puede usarse para el desarrollo de aplicaciones."
+        /* PROBLEMA #2 */
+        var num1 = 4 
+        var num2 = 4 
+        console.log("SUMA:", parseFloat(num1)+ parseFloat(num2))
+        console.log("RESTA:", parseFloat(num1)- parseFloat(num2))
+        console.log("MULTIPLICACION:", parseFloat(num1)* parseFloat(num2))
+        console.log("DIVISION:", parseFloat(num1)/ parseFloat(num2))
+        /* PROBLEMA #3 */
+        let word1 ='Hola'
+        let word2 ='Mundo'
+        /* FORMA 1 */
+        console.log(word1+' '+word2)
+        /* FORMA 2 */
+        console.log(word1.concat(' ' + word2))
+        /* PROBLEMA #4 */
+        const val1 = 4
+        const val2 = 'hola'
+        const val3 = false
+        console.log("Tipo de Dato:",typeof val1)
+        console.log("Tipo de Dato:",typeof val2)
+        console.log("Tipo de Dato:",typeof val3)
+        /* PROBLEMA #5 */
+        var compu = new Object()
+compu.year = 2022 //Tipo dato 
+compu.grafica = 'Gtx 1660S'
+compu.costo = true
+compu.dueño = new Object()
+        console.log("Tipo de Dato:",typeof compu.year)
+        console.log("Tipo de Dato:",typeof compu.grafica)
+        console.log("Tipo de Dato:",typeof compu.costo)
+        console.log("Tipo de Dato:",typeof compu.dueño)
+
+    </script>
+
+</body>
+
+</html>

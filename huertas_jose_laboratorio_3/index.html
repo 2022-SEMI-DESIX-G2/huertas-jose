@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio#3</title>
+</head>
+<body>
+    <h1><center>Laboratorio#3</center></h1>
+    <p> PROBLEMA#1 </p>
+    <p id="palin"></p>
+    <P>PROBLEMA#2</P>
+    <p id="fras"></p>
+    <p id="rep"></p>
+    
+    <script>
+// PROBLEMA #1
+function doblepalindromo(s) {
+	var primero=0
+	var ultim=s.length-1
+	while (primero<ultim) {
+		if (s.charAt(primero) != s.charAt(ultim)) {
+			break
+		}
+        
+		++primero
+		--ultim
+	}
+	if (primero<ultim) {return false}
+	else {return true}
+}
+var n=15351;
+var binS=n.toString(2)
+document.getElementById("palin").innerHTML = "El Numero :"+ n+" Tiene base de doble palindromo [TRUE OR FALSE] >>> : "+ doblepalindromo( binS )
+
+// PROBLEMA #2
+function funcioncontadora(frase){
+    var frase="PERRO"
+    frase=frase.replace(/ /g, ""); //Eliminamos los espacios de la frase
+    caracteres=frase.length;
+    document.getElementById("fras").innerHTML = "Tu frase "+frase+" tiene : " +caracteres+ " caracteres"
+    //console.log("Tu frase "+frase+" tiene : " +caracteres+ " caracteres" );
+
+    var caracteresagrupados = frase.toLowerCase().split("").sort();
+    //Almacenamos en el vector los caracteres agrupados y ordenados
+
+    var contletras = {}; //Definimos un objeto donde se almacene cada letra de la frase con el numero de veces que aparece
+
+    for(var i in caracteresagrupados) {
+        contletras[caracteresagrupados[i]] = (contletras[caracteresagrupados[i]] || 0 ) + 1;
+    }
+    return JSON.stringify(contletras);
+}
+//console.log(funcioncontadora());
+document.getElementById("rep").innerHTML = "Cantidad de caracteres repetidos : " +( funcioncontadora)();
+
+
+
+//[PROBLEMA #3]
+
+
+
+
+
+
+// [PROBLEMA #4]
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
