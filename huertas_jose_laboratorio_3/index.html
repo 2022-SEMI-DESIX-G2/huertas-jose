@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio#3</title>
+</head>
+<body>
+    <h1><center>Laboratorio#3</center></h1>
+    <p> PROBLEMA#1 </p>
+    <p id="palin"></p>
+    <P>PROBLEMA#2</P>
+    <p id="fras"></p>
+    <p id="rep"></p>
+    <p>PROBLEMA#3</p>
+    <p id="bis"></p>
+    <p>PROBLEMA#4</p>
+    <p id="primo"></p>
+    <p id="sum"></p>
+    
+    <script>
+// PROBLEMA #1
+function doblepalindromo(x) {
+	var primero=0
+	var ultim=x.length-1
+	while (primero<ultim) {
+		if (x.charAt(primero) != x.charAt(ultim)) {
+			break
+		}
+    
+		++primero
+		--ultim
+	}
+	if (primero<ultim) {return false}
+	else {return true}
+}
+var num=15351;
+var conver=num.toString(2)
+document.getElementById("palin").innerHTML = "El Numero :"+ num +" Tiene base de doble palindromo [TRUE OR FALSE] >>> : "+ doblepalindromo( conver )
+
+// PROBLEMA #2
+function funcioncontadora(frase){
+    var frase="PERRO"
+    frase=frase.replace(/ /g, ""); //Eliminamos los espacios de la frase
+    caracteres=frase.length;
+    document.getElementById("fras").innerHTML = "Tu frase "+frase+" tiene : " +caracteres+ " caracteres"
+    //console.log("Tu frase "+frase+" tiene : " +caracteres+ " caracteres" );
+
+    var caracteresagrupados = frase.toLowerCase().split("").sort();
+    //Almacenamos en el vector los caracteres agrupados y ordenados
+
+    var contadorletras = {}; //Definimos un objeto donde se almacene cada letra de la frase con el numero de veces que aparece
+
+    for(var i in caracteresagrupados) {
+        contadorletras[caracteresagrupados[i]] = (contadorletras[caracteresagrupados[i]] || 0 ) + 1;
+    }
+    return JSON.stringify(contadorletras); // Convertir un objeto de JavaScript en una cadena
+}
+//console.log(funcioncontadora());
+document.getElementById("rep").innerHTML = "Cantidad de caracteres repetidos : " +( funcioncontadora)();
+
+
+
+//[PROBLEMA #3]
+const esBisiesto = (year) => {
+    // Si el año agregado es divisible por 400 , es un año bisiesto
+  return (year % 400 === 0) ? true : 
+  // si el año agregado es divisible por 100 , no es un año bisiesto 
+  			(year % 100 === 0) ? false : 
+              // si el año agregado es divisible por 4 , es un año bisiesto
+  				year % 4 === 0
+}
+document.getElementById("bis").innerHTML="El año 2000 es Bisiesto[TRUE or FALSE >] : "+esBisiesto(2000)
+console.log(esBisiesto(2000))
+console.log(esBisiesto(2018))
+console.log(esBisiesto(2019))
+console.log(esBisiesto(2020))
+console.log(esBisiesto(2021))
+console.log(esBisiesto(2022))
+
+// [PROBLEMA #4]
+function numprimo(n) {
+    
+  var array = [],
+      suma = 0 ,
+    limitesuperior = Math.sqrt(n), //(1) encontrar todos los numeros debajo de 'n'
+    output = [];
+
+  for (var i = 0; i <= n; i++) { //(2) iniciamos un array para todos los numeros en true
+    array.push(true);
+  }
+
+  for (var i = 2; i <= limitesuperior; i++) {
+    if (array[i]) {
+      for (var j = i * i; j <=n; j += i) {
+        array[j] = false; //(3) eliminamos del array los multiplos
+      }
+    }
+  }
+
+  for (var i = 2; i <= n; i++) {
+    if (array[i]) {
+      output.push(i); //(4) agregamos a otro array los que no tienen multiplos
+    }
+  }
+ for (const valor of output) {
+     suma += valor
+
+ }
+ document.getElementById("primo").innerHTML="Los números primos anteriores a : [ "+n+" ] son los siguientes : [ "+output+" ]"
+ document.getElementById("sum").innerHTML=" La Suma de los numeros primos es : [ "+suma+" ]"
+  console.log("Numero primos anteriores : " , output);
+  return suma
+  
+}
+
+console.log(" SUMA : ", numprimo(7))
+
+    </script>
+    
+</body>
+</html>
