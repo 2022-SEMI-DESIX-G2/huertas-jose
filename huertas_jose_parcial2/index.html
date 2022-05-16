@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/file-pokeball-png-0.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>PokeApi</title>
+  </head>
+
+  <body>
+    <a href="https://github.com/JoseHuertas507" class="vector-img-git">
+      <img src="/img/Vector.png" alt="Git - Personal" />
+    </a>
+
+    <a href="index.html" class="card-header-img">
+      <img src="/img/pokeapi.png" class="card-header-img" alt="Poke Api Logo" />
+    </a>
+
+    <article class="card">
+      <div>
+        <h1 class="card-title-buscador-de-pokemones">Buscador de Pokemones</h1>
+      </div>
+      <div>
+        <p class="card-subtitulo">
+          Busca desde pokemones hasta las abilidades de los mismos.
+        </p>
+      </div>
+
+      <div>
+        <form id="busqueda-pokemon-form-id" action="">
+          <label for="card-title-buscar" class="card-title-buscar"
+            >Buscar</label
+          >
+
+          <input
+            type="text"
+            class="card-input-buscador-pokemon"
+            id="card-input-buscador-pokemon-id"
+            name="card-input-buscador-pokemon"
+            value=""
+            placeholder="Search"
+            autocomplete="off"
+            style="text-transform:lowercase"
+          />
+
+          <label
+            for="card-title-tipo-de-busqueda"
+            class="card-title-tipo-de-busqueda"
+            >Tipo de búsqueda
+          </label>
+
+          <select
+            id="card-select-por-pokemon-por-habilidad-id"
+            class="card-select-por-pokemon-por-habilidad"
+          >
+            <option value="pokemon" class="" selected>
+             Por Pokemon
+            </option>
+            <option value="ability" class="">
+              Por Habilidad
+            </option>
+          </select>
+
+          <button type="submit" class="card-button-buscar" id="card-button-buscar-id">Buscar</button>
+          <button type="reset" class="card-button-reset" id="card-button-reset-id" >Limpiar</button>
+        </form>
+      </div>
+    </article>
+    
+    <!-------------------------------------------DIVISION DEL ARTICLE [1] & ARTICLE [2]---------------------------------------------------------->
+    <article id="container-id" class="container"><article/>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

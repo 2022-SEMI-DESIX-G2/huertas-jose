@@ -1,0 +1,386 @@
+@charset "UTF-8";
+body {
+  /*width: 1366px;
+height: 1069px;*/
+  background: #031926;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vector-img-git {
+  /* Vector */
+  position: fixed;
+  left: 96.27%;
+  right: 2.98%;
+  top: 1.78%;
+  bottom: 96.03%;
+  background: transparent;
+}
+
+.card-header-img {
+  position: absolute;
+  width: 257px;
+  height: 103px;
+  z-index: 1;
+  margin: 15px auto 0 auto;
+}
+
+.card {
+  position: absolute;
+  width: 536px;
+  height: 210px;
+  /*left: 415px;
+    top: 100px;*/
+  margin: 100px auto 0 auto;
+  background: #F7F9F7;
+  border-radius: 5px;
+}
+
+.card-title-buscador-de-pokemones {
+  /* Buscador de pokemones */
+  position: absolute;
+  width: 314px;
+  height: 29px;
+  left: 47px;
+  top: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.card-subtitulo {
+  /* Busca desde pokemones hasta las abilidades de los mismos. */
+  position: absolute;
+  width: 400px;
+  height: 15px;
+  left: 47px;
+  top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 25.63px;
+  color: #000000;
+  /* identical to box height */
+}
+
+.card-title-buscar {
+  position: absolute;
+  width: 44px;
+  height: 15px;
+  left: 47px;
+  top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card-title-tipo-de-busqueda {
+  /* Tipo de búsqueda */
+  position: absolute;
+  width: 113px;
+  height: 15px;
+  left: 274px;
+  top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card-input-buscador-pokemon {
+  /* Rectangle 2 */
+  position: absolute;
+  width: 218px;
+  height: 27px;
+  left: 47px;
+  top: 120px;
+  background: #E8E8E8;
+  border-radius: 5px;
+  border: #E8E8E8;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.card-select-por-pokemon-por-habilidad {
+  /* Rectangle 3 */
+  position: absolute;
+  width: 218px;
+  height: 29px;
+  left: 274px;
+  top: 120px;
+  background: #E8E8E8;
+  border-radius: 5px;
+  border: #E8E8E8;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.card-button-buscar {
+  /* Rectangle 4 */
+  position: absolute;
+  width: 108px;
+  height: 27px;
+  left: 385px;
+  top: 170px;
+  background: #19A5F8;
+  border-radius: 5px;
+  border: #19A5F8;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+.card-button-buscar:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #fad336;
+}
+
+.card-button-reset {
+  /* Rectangle 4 */
+  display: none;
+  position: absolute;
+  width: 108px;
+  height: 27px;
+  left: 47px;
+  top: 170px;
+  background: #19A5F8;
+  border-radius: 5px;
+  border: #19A5F8;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+.card-button-reset:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #fad336;
+}
+
+.card .reset-limpiar {
+  display: block;
+}
+
+.card2 {
+  /* Rectangle 5 */
+  position: relative;
+  width: 536px;
+  height: 228px;
+  left: auto;
+  right: auto;
+  top: 335px;
+  background: #F7F9F7;
+  border-radius: 5px;
+}
+
+.card2-title-id {
+  /* Pikachu (25) */
+  text-transform: capitalize;
+  position: absolute;
+  width: auto;
+  height: 22px;
+  left: 47px;
+  top: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card2-sprite-title {
+  /* Sprites */
+  position: absolute;
+  width: 44px;
+  height: 15px;
+  left: 47px;
+  top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card2-pokemon-frente-img {
+  /* image 2 */
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  left: 40px;
+  top: 85px;
+}
+
+.card2-pokemon-detras-img {
+  /* image 3 */
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  left: 80px;
+  top: 85px;
+}
+
+.card2-title-evo-chain {
+  /* Evolution chain */
+  position: absolute;
+  width: auto;
+  height: 15px;
+  left: 50px;
+  top: 130px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card2-lista-evo {
+  /* Pichu Pikachu Raichu */
+  text-transform: capitalize;
+  position: absolute;
+  width: 67px;
+  height: auto;
+  left: 25px;
+  top: 150px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  list-style: circle;
+  color: #000000;
+}
+
+.card2-weight-height-title {
+  /* Weight / Height */
+  position: absolute;
+  width: 101px;
+  height: 15px;
+  left: 340px;
+  top: 60px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card2-weight-height-power {
+  /* 40 / 3 */
+  position: absolute;
+  width: 33px;
+  height: 15px;
+  left: 340px;
+  top: 90px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card2-title-abilities {
+  /* Abilities */
+  position: absolute;
+  width: 52px;
+  height: 15px;
+  left: 340px;
+  top: 130px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.card2-lista-abilities {
+  /* Limber Imposter */
+  text-transform: capitalize;
+  position: absolute;
+  width: auto;
+  height: 30px;
+  left: 312px;
+  top: 150px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  list-style: circle;
+  color: #000000;
+}
+
+.card2-title-battle-armor {
+  /* Who can learn it? */
+  position: absolute;
+  width: 111px;
+  height: 15px;
+  left: 47px;
+  top: 55px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+  color: #000000;
+}
+
+.card2-lista-battle-armor {
+  /* Cubone Marowak Kabuto Kabutops Anorith Armaldo */
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 20px;
+  top: 70px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
